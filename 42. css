@@ -1,0 +1,1239 @@
+html
+{ 
+        background: url(images/space4.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+}
+Div
+{}
+p
+{}
+#Container
+{
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+}
+#ContainerOverlap
+{
+    width: 100%;
+    height: 100%;
+    background:url(images/Cockpit.jpg) no-repeat center ;
+    background-position: bottom;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size:100%;
+    margin-left:-0.5%;
+    margin-right: auto;
+    border-radius: 25px;
+    position: absolute;
+    display: none;
+}
+#InstructionsText
+{
+    width: 80%;
+    height: 60%;
+    margin-top: 14%;
+    margin-left: 10%;
+    background-image: url(images/InstructionsImage.png);
+    background-size: cover;
+    border-radius: 25px;
+}
+p.Instructions
+{
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    margin-top: 22%;
+   
+}
+.InstructionClose
+{
+    width: 5vw;
+    height:5vh;
+    background-color: royalblue;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 240%;
+    color: white;
+    margin-left: 10%;
+    text-align: center;
+    
+}
+.InstructionClose:hover
+{
+    background-color: darkblue;
+}
+
+#Game
+{
+    width: 70vw;
+    height: 80vh;
+    background-image: url(images/normal.jpg);
+    background-position: bottom;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size:100%;
+    margin-left: 15vw;
+    margin-right: auto;
+    margin-top: 4.1vh;
+    padding-top: 1.5%;
+    display: none;
+    position: absolute;
+}
+p.Value
+{
+    width: 100%;
+    height: 79%;
+    padding-top:0%;
+    text-align: center;
+    padding-top: 12%;
+    color: white;
+    
+    font-size: 160%;
+    margin: 0;
+}   
+.Choice1
+{
+    width: 38%;
+    height: 100%;
+    background-color: royalblue;
+    float: left;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    
+}
+.Choice2
+{
+    width: 40%;
+    height: 100%;
+    background-color: royalblue;
+    float: right;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    
+    
+}
+.Fold
+{
+    width: 20%;
+    height: 100%;
+    background-color: royalblue;
+    float: right;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    margin-right: 1%;
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    
+   
+}
+#ValueContainer
+{
+    width: 60%;
+    height: 60%;
+    background-color: royalblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    border-radius: 25px; 
+}
+#showNumber
+{
+    width : 12%;
+    height: 20%;
+    margin-top: 4%;
+    margin-left: 1%;
+    position: fixed;
+    padding-top: 2%;
+    text-align: center;
+    margin: 0;
+    float:left;
+    color: white;
+    display:none;
+    
+    font-size: 90px;
+}
+
+#SpaceShipRoad1
+{
+    width:11%;
+    height: 100%;
+    position:fixed;
+    padding:0;
+    margin-left:2%;
+    top:0;
+    left:0;
+    float: left;
+    display: none;
+    
+}
+#SpaceShip
+{
+    background: none repeat scroll 0% 0%;
+    width:100%;
+    height:30%;
+    -webkit-animation: animate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: none; 
+    position: relative;
+    top:100%;
+    bottom:0%;
+    
+    
+}
+#Instructions
+
+  
+    {
+    width: 60vw;
+    height: 80vh;
+    background-image: url(images/instructions.jpg);
+    
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+   
+        background-repeat: no-repeat;
+    margin-left: 18vw;
+    margin-right: auto;
+    margin-top: 4.1vh;
+    padding-top: 1.5%;
+    border-radius: 25px;
+    display: none;
+    
+    position: absolute;
+    
+
+ 
+    
+}
+#Difficulty
+{
+    width: 60vw;
+    height: 80vh;
+    background-image: url(images/instructions.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: bottom;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    
+    
+    
+    margin-top: 4.5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    
+}
+.Hard
+{
+    width: 28%;
+    margin-top: 30%;
+    background-color: royalblue;
+    float: left;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+   
+    
+}
+.Easy
+{
+    width: 28%;
+    margin-top: 30%;
+    background-color: royalblue;
+    float: left;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+    
+    margin-left: 7%
+    
+}
+.Normal
+{
+    width: 28%;
+    margin-top: 30%;
+    background-color: royalblue;
+    float: left;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+    
+    
+}
+#SpaceShipRoad2
+{
+    width:11%;
+    height: 100%;
+    display: none;
+    padding:0;
+    margin-left:2%;
+    top:0;
+    left:0;
+    float: right;
+}
+#ChoiceContainer
+{
+    width: 90%;
+    height: 13%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+button
+{
+    border-radius: 25px;
+    border: none;
+    background: none;
+}
+#SoundOn
+{
+    width: 18.2%;
+    height: 30%;
+    padding: 0%;
+    
+    background-image: url(images/VolumeOn.png);
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+#SoundOff
+{
+    width: 18.2%;
+    height: 35%;
+    padding: 0%;
+    
+    background-image: url(images/VolumeOff.jpg);
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+.Back
+{
+    width: 20%;
+    height: 50%;
+    margin-top: 1%;
+    
+    margin-left: 39%;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    margin-right: 1%;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    
+}
+.Choice1:hover
+{
+    background-color: darkblue;
+}
+.Choice2:hover
+{
+    background-color: darkblue;
+}
+.Fold:hover
+{
+    background-color: darkblue;
+}.Back:hover
+{
+    background-color: darkblue;
+}
+#ScoreContainer
+{
+    width: 7%;
+    height: 12%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    border-radius: 25px;
+    background-image: url(images/red.png);
+    -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+}
+#Options
+{
+    width:27vw;
+    height:27vh;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:12.5%;
+    border-radius: 25px;
+    
+}
+.options
+{
+    width:27vw;
+    height:8vh;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:17.5%;
+    border-radius: 25px;
+    
+}
+#time
+{
+    width : 12%;
+    height: 20%;
+    position: fixed;
+    text-align: center;
+    margin: 0;
+    float:left;
+    color: white;
+    
+    font-size: 350%;
+}
+p.time
+{
+    width : 12%;
+    height: 20%;
+    position: fixed;
+    text-align: center;
+    margin: 0;
+    float:left;
+    color: white;
+    color: white;
+    
+    font-size: 150%;
+}
+.StartBtn
+{
+    width: 40.5%;
+    height: 30%;
+    background-color: royalblue;
+    float: left;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 130%;
+    color: white;
+    text-align: center;
+    
+}
+.StartBtn:hover
+{
+    background-color: darkblue;
+}
+.OptionBtn
+{
+    width: 40.9%;
+    height: 30%;
+    height: 30%;
+    background-color: royalblue;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 130%;
+    color: white;
+    text-align: center;
+    
+    float: right;
+}
+.OptionBtn:hover
+{
+    background-color: darkblue;
+}
+p.Score
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    
+    margin: 0;
+}
+#Title
+{
+    width: 20%;
+    height: 35%;
+    margin-left: 40%;
+    margin-top: -1.5%;
+    font-size: 300px;
+    color: white;
+    text-align: center;
+    
+    position 
+    
+}
+p.Value
+{
+    width: 100%;
+    height: 79%;
+    padding-top:0%;
+    text-align: center;
+    padding-top: 12%;
+    color: white;
+    
+    font-size: 160px;
+    margin: 0;
+}   
+.Choice1
+{
+    width: 38%;
+    height: 100%;
+    background-color: royalblue;
+    float: left;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    
+}
+.Choice2
+{
+    width: 40%;
+    height: 100%;
+    background-color: royalblue;
+    float: right;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    
+    
+}
+.Fold
+{
+    width: 20%;
+    height: 100%;
+    background-color: royalblue;
+    float: right;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    margin-right: 1%;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    
+   
+}
+#Explosion
+{
+  /*    
+  background-image:url(http://winnerhun.uw.hu/vigyorpofa.gif);
+  background-repeat:no-repeat;
+  */
+        
+    width: 70%;
+    height: 80%;    
+    background:url(images/Explosion.gif) no-repeat center ;
+    background-position: bottom;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    display: none;
+    
+    margin-left: 15%;
+    margin-right: auto;
+    margin-top: 4.1%;
+    padding-top: 1.5%;
+    position:absolute;
+    
+}
+#Lightspeed
+    {
+        width: 100%;
+        height: 100%;
+        background:url(images/Lightspeed.png) no-repeat center ;
+        
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        
+        margin: 0;
+        padding: 0;
+        display: none;
+        position: absolute;
+        
+        
+    }
+#WinMessage
+{
+    width: 100%;
+    height: 11vh;
+    
+    margin: auto;
+}
+p.WinMessage
+    {
+    
+    text-align: center;
+    align-content: center;
+    font-size: 900%;
+    color: lightblue;
+    }
+#LooseMessage
+{
+    width: 100%;
+    height: 11vh;
+    
+    margin: auto;
+}
+p.LooseMessage
+    {
+        
+    text-align: center;
+    align-content: center;
+    font-size: 900%;
+    color: red;
+    }
+#ValueContainer
+{
+    width: 60%;
+    height: 60%;
+    background-color: royalblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    border-radius: 25px; 
+}
+    
+@-webkit-keyframes animate{
+       
+       0%
+        {
+            top:100%;
+            
+        }
+      
+    100%
+        {
+            top:0%;
+            bottom:1000%;
+            
+        }
+    }
+    
+@media (max-width: 769px)
+{
+ 
+#ContainerOverlap
+{
+    width: 100vw;
+    height: 100vh;
+    background:url(images/mobileIntro.png) no-repeat center ;
+    background-position: bottom;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size:100%;
+    margin-left:-0.5%;
+    margin-right: auto;
+    border-radius: 25px;
+    position: absolute;
+    display: none;
+    
+}
+    #Options
+{
+    width:40vw;
+    height:20vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:35.5%;
+    border-radius: 25px;
+}
+.options
+{
+    width:27vw;
+    height:8vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:11.5%;
+    border-radius: 25px;
+}
+
+.StartBtn:hover
+{
+    background-color: ;
+}
+
+.OptionBtn:hover
+{
+    background-color: ;
+}
+#Title
+{
+    width: 20%;
+    height: 35%;
+    margin-left: 40%;
+    margin-top: 3%;
+    font-size: 150px;
+    color: white;
+    text-align: center;
+    
+    position 
+    
+}
+    #InstructionsText
+{
+    width: 80%;
+    height: 70%;
+    margin: auto;
+   
+}
+p.Instructions
+{
+    font-size: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 22%;
+    
+    
+
+}
+.InstructionClose
+{
+    width: 18vw;
+    height:8vh;
+    background-color: royalblue;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    
+}
+#Instructions
+
+  
+    {
+    width: 88vw;
+    height: 60vh;
+    background-image: url(images/instructions.jpg);
+    
+    
+        background-repeat: no-repeat;
+    margin-left: 4vw;
+    margin-right: auto;
+    margin-top: 10vh;
+    padding-top: 1.5%;
+    
+    display: none;
+    
+    position: absolute;
+    
+    
+}
+    #Difficulty
+{
+     width: 88vw;
+    height: 60vh;
+    background-image: url(images/instructions.jpg);
+    
+    
+        background-repeat: no-repeat;
+    margin-left: 4vw;
+    margin-right: auto;
+    margin-top: 10vh;
+    padding-top: 1.5%;
+    
+    display: none;
+    
+    position: absolute;
+    
+}
+    #Game
+{
+    width: 70vw;
+    height: 80vh;
+    background-image: url(images/normal.jpg);
+    background-position: bottom;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size:100%;
+    margin-left: 15vw;
+    margin-right: auto;
+    margin-top: 4.1vh;
+    padding-top: 1.5%;
+   
+    display: none;
+    
+    position: absolute;
+}
+    
+    
+}
+@media (max-width: 600px)
+{
+ 
+    #Options
+{
+    width:40vw;
+    height:15vh;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:70.5%;
+    border-radius: 25px;
+    
+}
+.options
+{
+    width:27vw;
+    height:5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:11.5%;
+    border-radius: 25px;
+}
+.StartBtn
+    {
+        font-size: 100%;
+    }
+    .OptionBtn
+    {
+        font-size: 100%;
+    }
+.StartBtn:hover
+{
+    background-color: ;
+}
+
+.OptionBtn:hover
+{
+    background-color: ;
+}
+#Title
+{
+    width: 20%;
+    height: 35%;
+    margin-left: 28%;
+    margin-top: 8%;
+    font-size: 150px;
+    color: white;
+    text-align: center;
+    
+    position 
+    
+}
+    #InstructionsText
+{
+    width: 80%;
+    height: 15%;
+    margin: auto;
+   
+}
+p.Instructions
+{
+    font-size: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 48%;
+    
+    
+
+}
+.InstructionClose
+{
+    width: 25vw;
+    height:4vh;
+    background-color: royalblue;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 100%;
+    color: white;
+    text-align: center;
+    
+}
+#Instructions
+
+  
+    {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/mobileInstructions.png);
+    background-repeat: no-repeat;
+    margin-left: 4vw;
+    margin-right: auto;
+    margin-top: 10vh;
+    padding-top: 1.5%;
+    border-radius: 0%;
+    display: none;
+    
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+    
+    
+}
+
+    #Game
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/normal.jpg);
+    background-position: bottom;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size:100%;
+    
+    margin-right: auto;
+    
+    padding-top: 1.5%;
+    
+    display: none;
+    
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+}
+    
+    #Difficulty
+
+  
+    {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/mobileInstructions.png);
+    background-repeat: no-repeat;
+    margin-left: 4vw;
+    margin-right: auto;
+    margin-top: 10vh;
+    padding-top: 1.5%;
+    
+    display: none;
+    
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+}
+    .Hard
+{
+    width: 28%;
+    margin-top: 90%;
+    background-color: royalblue;
+    float: left;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    
+    
+}
+.Easy
+{
+    width: 28%;
+    margin-top: 90%;
+    background-color: royalblue;
+    float: left;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    
+    margin-left: 7%;
+    display: inline-block;
+    
+    
+}
+.Normal
+{
+    width: 28%;
+    margin-top: 90%;
+    background-color: royalblue;
+    float: left;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    
+    
+}
+    
+    p.Value
+{
+    width: 100%;
+    height: 79%;
+    padding-top:0%;
+    text-align: center;
+    padding-top: 12%;
+    color: white;
+    
+    font-size: 160%;
+    margin: 0;
+}   
+.Choice1
+{
+    width: 38%;
+    height: 100%;
+    background-color: royalblue;
+    float: left;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    
+}
+.Choice2
+{
+    width: 40%;
+    height: 100%;
+    background-color: royalblue;
+    float: right;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    
+    
+}
+.Fold
+{
+    width: 20%;
+    height: 100%;
+    background-color: royalblue;
+    float: right;
+    border-radius: 25px;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
+    margin-right: 1%;
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    
+   
+}
+#ValueContainer
+{
+    width: 60%;
+    height: 60%;
+    background-color: royalblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    border-radius: 25px; 
+}
+#showNumber
+{
+    width : 12%;
+    height: 20%;
+    margin-top: 4%;
+    margin-left: 1%;
+    position: fixed;
+    padding-top: 2%;
+    text-align: center;
+    margin: 0;
+    float:left;
+    color: white;
+    display:none;
+    
+    font-size: 90px;
+}
+    
+    body
+{
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+    
+}
+#Container
+{
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+}
+    #Explosion
+{
+  /*    
+  background-image:url(http://winnerhun.uw.hu/vigyorpofa.gif);
+  background-repeat:no-repeat;
+  */
+        
+    width: 100%;
+    height: 100%;    
+    background:url(images/Explosion.gif) no-repeat center ;
+    background-size: cover;
+    
+    display: none;
+    
+    margin-left: 15%;
+    margin-right: auto;
+    margin-top: 4.1%;
+    padding-top: 1.5%;
+    
+     position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+    
+}
+#LooseMessage
+{
+    width: 100%;
+    height: 11vh;
+    
+    margin: auto;
+}
+p.LooseMessage
+    {
+        
+    text-align: center;
+    align-content: center;
+    font-size: 700%;
+    color: red;
+    }
+    
+}
+
+    
+   
+    
+   
