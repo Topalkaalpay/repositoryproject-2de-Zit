@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>G.O.R.A</title>
+    <link rel="icon" href="images/logo.png" type="image/gif">
+    <link rel="stylesheet" href="42.css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="jquery1.js"></script>
+    <script type="text/javascript"></script>
+    <script>
+    </script>
+</head>
+
+
+
+<body>
+    <div id="Lightspeed">
+    <div ID="WinMessage">
+                    <p class="WinMessage">You Won!</p>
+                    <button id="Back" class="Back" onclick="playStart('audio');Back('ContainerOverlap','Explosion')">Back</button>
+                </div>
+    </div>
+    <audio id="AudioIntro" loop=true src="Sound/IntroMusic.ogg" autoplay></audio>
+    <audio id="LightSpeed" src="Sound/LightSpeed.ogg"></audio>
+    <audio id ="Transmission" src="Sound/Transmision.ogg"></audio>
+    <audio id ="Error" src="Sound/Error.ogg"></audio>
+    <audio id ="Login" src="Sound/Login.ogg"></audio>
+    <audio id ="Alarm" src="Sound/Alarm.ogg"></audio>
+    <div id="container">
+
+        <script src="42.js"></script>
+
+        <div ID="ContainerOverlap">
+            <div ID="Title">42</div>
+            <div ID="Options">
+
+                <audio id="audio" src="Sound/startAudio.ogg"></audio>
+                <button class="StartBtn" onclick="chooseDifficulty(); playStart('audio')">Start</button>
+                <button class="OptionBtn" onClick="playStart('audio'); showInstructions()">Instructions</button>
+                <button id="SoundOn" onclick="soundOnOff()">
+                    
+                </button>
+
+            </div>
+        </div>
+        <div ID="Difficulty">
+            <button class="Easy" onClick="playStart('audio'); Start('ContainerOverlap','Game'); clickTimer(60 * 5)">Easy</button>
+            <button class="Normal" onClick="playStart('audio'); Start('ContainerOverlap','Game'); clickTimer(60 * 3)">Normal</button>
+            <button class="Hard" onClick="playStart('audio'); Start('ContainerOverlap','Game'); clickTimer(60 * 1)">Hard</button>
+        </div>
+        <div ID="Instructions">
+            <div ID="InstructionsText">
+                
+                
+            </div>
+            <button class="InstructionClose" onclick="closeInstructions(); playStart('audio')">Close</button>
+        </div>
+
+        <div id="GameContainer">
+            <div ID="SpaceShipRoad1">
+                <div ID="SpaceShip">
+                    <image src="images/spaceship.png" style="width:100%;height:80%;"></image>
+                </div>
+            </div>
+
+
+            <audio id="audio3" src="Sound/BombExplosion.ogg"></audio>
+            <div ID="Explosion">
+                <div ID="LooseMessage">
+                    <p class="LooseMessage">You loose!</p>
+                    <button id="Back" class="Back" onclick="playStart('audio');Back('ContainerOverlap','Explosion')">Back</button>
+                </div>
+            </div>
+            <div ID="SpaceShipRoad2">
+                <div ID="SpaceShip">
+                    <image src="images/spaceship.png" style="width:100%;height:80%;"></image>
+                </div>
+            </div>
+            <div ID="Game">
+
+                <section>
+                    <span id="time"></span>
+                </section>
+
+                <section ID="ScoreContainer">
+                    <p class="Score" id="score"></p>
+                </section>
+
+                <section ID="showNumber"></section>
+
+                <section ID="ValueContainer">
+                    <p class="Value" id="val"></p>
+                </section>
+
+                <section ID="ChoiceContainer">
+
+                    <section ID="Choice">
+
+                        <audio id="audio2" src="Sound/clickAudio.ogg"></audio>
+                        <button id="1-8" class="Choice1" onclick="playChoice('audio2');choice1();showNumber('showNumber')">1-8</button>
+                        <button id="4-7" class="Choice2" onclick="playChoice('audio2');choice2()">4-7</button>
+                        <button id="Fold" class="Fold" onclick="playStart('audio');Fold()">Fold</button>
+                        <button id="Back" class="Back" onclick="playStart('audio');Back('ContainerOverlap','Game')">Back</button>
+
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
